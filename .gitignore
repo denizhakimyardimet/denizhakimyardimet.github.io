@@ -1,0 +1,11 @@
+# Local build/source artifacts — not part of the published site
+.claude/
+deniz_hakim/
+_build_images.py
+.demo_skeleton.html
+
+# OS / editor junk
+Thumbs.db
+desktop.ini
+.DS_Store
+*.log
