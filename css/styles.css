@@ -58,14 +58,6 @@ header{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.86);backdro
 .portrait .tag span{font-size:12px;opacity:.85}
 .duo .amp{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Fraunces','Lora',serif;font-style:italic;font-size:30px;color:var(--gold-deep);background:var(--cream);width:50px;height:50px;border-radius:50%;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.12);z-index:3}
 
-/* stat strip */
-.stats{background:var(--parchment);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:30px 24px}
-.stat{text-align:center}
-.stat .n{font-family:'Fraunces','Lora',serif;font-size:clamp(26px,4vw,40px);font-weight:600;color:var(--gold-deep);line-height:1}
-.stat .l{font-size:12.5px;color:var(--muted);margin-top:7px;letter-spacing:.3px}
-.stat+.stat{border-left:1px solid var(--line)}
-
 /* sections */
 section.pad{padding:72px 0}
 section.pad.tight{padding-top:0}
@@ -150,8 +142,6 @@ footer .tr{max-width:620px;margin:0 auto 14px;font-size:13px;line-height:1.6}
 @media(max-width:860px){
   .hero{padding:54px 0 44px}
   .hero-grid{grid-template-columns:1fr;gap:34px}
-  .stats .wrap{grid-template-columns:1fr 1fr}
-  .stat:nth-child(3){border-left:none}
   .prog-grid,.cards{grid-template-columns:1fr}
   .gal{grid-template-columns:repeat(3,1fr)}
   .docgrid{grid-template-columns:repeat(3,1fr)}
