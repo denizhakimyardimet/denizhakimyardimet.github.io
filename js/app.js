@@ -169,4 +169,17 @@
     }, { threshold: 0.2 });
     dio.observe(docsSec);
   }
+
+  /* ---------- floating "Kartlara bax" CTA: appears on entry, hides over the cards ---------- */
+  var floatCta = document.querySelector(".float-cta");
+  if (floatCta) {
+    var helpSec = document.getElementById("help");
+    if (helpSec && "IntersectionObserver" in window) {
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) { floatCta.classList.toggle("show", !e.isIntersecting); });
+      }, { threshold: 0.2 }).observe(helpSec);
+    } else {
+      floatCta.classList.add("show");
+    }
+  }
 })();

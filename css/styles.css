@@ -48,11 +48,21 @@ header{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.86);backdro
 .btn-gold:hover{transform:translateY(-2px)}
 .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
 .btn-ghost:hover{border-color:var(--gold)}
-.btn-pill{border-radius:999px;padding:15px 32px}
 .hero-media{display:flex;flex-direction:column;gap:20px}
 .hero-media .duo{width:100%}
 .btn-pulse{align-self:center;animation:heartbeat 1.9s ease-in-out infinite;will-change:transform}
 @keyframes heartbeat{0%,100%{transform:scale(1)}12%{transform:scale(1.06)}24%{transform:scale(1)}36%{transform:scale(1.035)}48%{transform:scale(1)}}
+
+/* floating "Kartlara bax" CTA — visible by default (no-JS safe); slides up from bottom when JS+motion */
+.float-cta{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:61;
+  background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#fff;
+  font-family:'Manrope',sans-serif;font-weight:700;font-size:15px;letter-spacing:.2px;
+  padding:15px 34px;border:none;border-radius:999px;cursor:pointer;white-space:nowrap;
+  box-shadow:0 16px 38px -12px rgba(120,90,30,.65)}
+.float-cta:hover{box-shadow:0 20px 44px -12px rgba(120,90,30,.85)}
+html.js-reveal .float-cta{opacity:0;transform:translateX(-50%) translateY(140%);pointer-events:none;
+  transition:transform .6s cubic-bezier(.2,.8,.2,1),opacity .45s ease,box-shadow .2s}
+html.js-reveal .float-cta.show{opacity:1;transform:translateX(-50%) translateY(0);pointer-events:auto}
 
 /* paired portraits — the signature */
 .duo{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -162,6 +172,7 @@ footer .tr{max-width:620px;margin:0 auto 14px;font-size:13px;line-height:1.6}
   .langs button{padding:6px 8px}
   .wa{width:52px;height:52px;right:16px;bottom:16px}
   .lb .nav{display:none}
+  .float-cta{padding:13px 22px;font-size:14px;bottom:14px}
 }
 
 /* reduced motion */
