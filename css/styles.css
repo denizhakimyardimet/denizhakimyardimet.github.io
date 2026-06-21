@@ -139,9 +139,11 @@ section.pad.tight{padding-top:0}
 .bank .who{font-size:13.5px;color:#a99e86;margin-top:6px;letter-spacing:.3px}
 .bank .who b{color:#e9dec4;font-weight:600}
 .bank .num{font-family:'Manrope',sans-serif;font-size:18px;letter-spacing:1.5px;margin-top:18px;color:#fff;font-weight:600}
-.bank .cp{font-size:13.5px;color:var(--gold-soft);margin-top:12px;display:flex;align-items:center;gap:6px}
+.copybtn{margin-top:16px;font:inherit;font-family:'Manrope',sans-serif;font-size:13.5px;font-weight:600;color:var(--gold-soft);background:rgba(231,214,172,.10);border:1px solid rgba(231,214,172,.30);border-radius:10px;padding:10px 16px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;transition:.2s}
+.copybtn:hover{background:rgba(231,214,172,.18);border-color:var(--gold-soft)}
+.copybtn:active{transform:translateY(1px)}
 .bank.copied{border-color:#7bbf6a}
-.bank.copied .cp{color:#9fe08c}
+.bank.copied .copybtn{color:#9fe08c;border-color:rgba(123,191,106,.6);background:rgba(123,191,106,.12)}
 .contact{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px;align-items:center;color:#c9bfa8;font-size:15px}
 .contact a{color:var(--gold-soft);font-weight:600}
 
