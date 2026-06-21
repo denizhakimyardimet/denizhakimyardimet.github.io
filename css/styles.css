@@ -82,7 +82,6 @@ section.pad.tight{padding-top:0}
 .shead .sub,.shead .sub-light{margin-top:14px}
 .shead .sub-light{color:var(--muted);max-width:620px}
 .story p{font-size:17px;color:#4a4234;margin-bottom:18px;max-width:760px}
-.story p.first:first-letter{font-family:'Fraunces','Lora',serif;float:left;font-size:62px;line-height:.8;font-weight:600;color:var(--gold-deep);margin:6px 12px 0 0}
 
 /* treatment progress dots (shown inside the medical-condition cards) */
 .dots{display:flex;gap:9px;margin:18px 0 10px}
