@@ -81,6 +81,8 @@ section.pad.tight{padding-top:0}
 .shead h2{font-size:clamp(26px,3.6vw,38px);font-weight:600;line-height:1.15;letter-spacing:-.3px}
 .shead .sub,.shead .sub-light{margin-top:14px}
 .shead .sub-light{color:var(--muted);max-width:620px}
+.shead.center{margin-left:auto;margin-right:auto;text-align:center}
+.shead.center .sub,.shead.center .sub-light{margin-left:auto;margin-right:auto}
 .story p{font-size:17px;color:#4a4234;margin-bottom:18px;max-width:760px}
 
 /* treatment progress dots (shown inside the medical-condition cards) */
