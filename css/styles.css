@@ -48,6 +48,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.86);backdro
 .btn-gold:hover{transform:translateY(-2px)}
 .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
 .btn-ghost:hover{border-color:var(--gold)}
+.btn .chev{color:var(--gold-deep);flex:none}
 .hero-media{display:flex;flex-direction:column;gap:20px}
 .hero-media .duo{width:100%}
 .btn-pulse{align-self:center;animation:heartbeat 1.9s ease-in-out infinite;will-change:transform}
