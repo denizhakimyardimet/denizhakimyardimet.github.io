@@ -84,17 +84,13 @@ section.pad.tight{padding-top:0}
 .story p{font-size:17px;color:#4a4234;margin-bottom:18px;max-width:760px}
 .story p.first:first-letter{font-family:'Fraunces','Lora',serif;float:left;font-size:62px;line-height:.8;font-weight:600;color:var(--gold-deep);margin:6px 12px 0 0}
 
-/* progress */
-.prog-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:8px}
-.pcard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 10px 30px -22px rgba(120,90,30,.4)}
-.pcard h3{font-size:21px;font-weight:600;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
-.pcard h3 .age{font-family:'Manrope',sans-serif;font-size:13.5px;font-weight:600;color:var(--muted)}
+/* treatment progress dots (shown inside the medical-condition cards) */
 .dots{display:flex;gap:9px;margin:18px 0 10px}
 .dots i{flex:1;height:9px;border-radius:6px;background:var(--gold-soft)}
 .dots i.done{background:linear-gradient(135deg,var(--gold),var(--gold-deep))}
 .dots i.next{background:repeating-linear-gradient(45deg,var(--gold-soft),var(--gold-soft) 5px,#fff 5px,#fff 10px);border:1px dashed var(--gold-deep)}
-.pcard .pl{font-size:13.5px;color:var(--muted)}
-.pcard .pl b{color:var(--gold-text)}
+.ccard .pl{font-size:13.5px;color:var(--muted)}
+.ccard .pl b{color:var(--gold-text)}
 
 /* gallery */
 .gal{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
@@ -119,6 +115,7 @@ section.pad.tight{padding-top:0}
 .ccard{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 10px 30px -22px rgba(120,90,30,.4)}
 .ccard .cname{font-size:21px;font-weight:600;display:flex;align-items:center;gap:10px;margin-bottom:14px}
 .ccard .cname .hi{color:var(--gold-deep);font-size:17px}
+.ccard .cname .age{margin-left:auto;font-family:'Manrope',sans-serif;font-size:13px;font-weight:600;color:var(--muted);white-space:nowrap}
 .ccard .cdesc{font-size:16.5px;color:#4a4234;line-height:1.6}
 .ccard .ctech{font-size:13px;color:var(--muted);font-style:italic;margin-top:12px}
 .ccard.fam .frow{margin-top:14px}
