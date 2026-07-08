@@ -49,7 +49,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.86);backdro
 .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
 .btn-ghost:hover{border-color:var(--gold)}
 .btn .chev{color:var(--gold-deep);flex:none}
-.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#fff;border-radius:999px;box-shadow:0 16px 36px -16px rgba(120,90,30,.6)}
+.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#fff;border:1px solid transparent;border-radius:999px;box-shadow:0 16px 36px -16px rgba(120,90,30,.6)}
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 42px -16px rgba(120,90,30,.78)}
 .btn-white{background:#fff;color:var(--ink);border-radius:999px;border:1px solid var(--line);box-shadow:0 12px 30px -20px rgba(120,90,30,.45)}
 .btn-white:hover{transform:translateY(-2px);border-color:var(--gold);box-shadow:0 16px 34px -20px rgba(120,90,30,.55)}
@@ -193,6 +193,8 @@ footer .tr{max-width:620px;margin:0 auto 14px;font-size:13.5px;line-height:1.6}
   .wa{width:52px;height:52px;right:16px;bottom:16px}
   .lb .nav{display:none}
   .float-cta{padding:13px 22px;font-size:14px;bottom:14px}
+  .cta-row{gap:10px}
+  .cta-row .btn{width:100%;justify-content:center}
 }
 
 /* reduced motion */
