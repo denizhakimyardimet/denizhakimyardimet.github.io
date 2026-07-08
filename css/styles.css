@@ -42,13 +42,19 @@ header{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.86);backdro
 .hero h1 em{font-style:italic;color:var(--gold-deep)}
 .hero p.lead{font-size:clamp(16px,2vw,19px);font-weight:500;color:var(--muted);max-width:540px;margin:22px 0 32px}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
-.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:-6px}
 .btn{font-family:'Manrope',sans-serif;font-weight:700;font-size:15px;padding:14px 26px;border-radius:12px;cursor:pointer;border:none;transition:.22s;display:inline-flex;align-items:center;gap:9px;line-height:1}
 .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#fff;box-shadow:var(--shadow)}
 .btn-gold:hover{transform:translateY(-2px)}
 .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
 .btn-ghost:hover{border-color:var(--gold)}
 .btn .chev{color:var(--gold-deep);flex:none}
+.btn-teal{background:linear-gradient(135deg,#128577,#0B6B60);color:#fff;border-radius:999px;box-shadow:0 16px 36px -16px rgba(11,107,96,.65)}
+.btn-teal:hover{transform:translateY(-2px);box-shadow:0 20px 42px -16px rgba(11,107,96,.8)}
+.btn-white{background:#fff;color:var(--ink);border-radius:999px;border:1px solid rgba(42,36,27,.07);box-shadow:0 12px 30px -20px rgba(42,36,27,.45)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 16px 34px -20px rgba(42,36,27,.55)}
+.btn .ic-wa{fill:#25D366;flex:none}
+.btn .ic-doc{color:#1EA35C;flex:none}
 .hero-media{display:flex;flex-direction:column;gap:20px}
 .hero-media .duo{width:100%}
 .btn-pulse{align-self:center;animation:heartbeat 1.9s ease-in-out infinite;will-change:transform}
